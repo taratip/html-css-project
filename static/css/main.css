@@ -1,0 +1,47 @@
+body {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  color: black;
+  background-image: url("../../media/images/abstract-art-backdrop-926985.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+header {
+  margin-bottom: 30px;
+}
+
+.main {
+  background-color: white;
+  padding: 40px;
+}
+
+.navbar.navbar-expand-lg.navbar-light {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  height: 30px;
+}
+
+.navbar-nav > a {
+  border-right: 1px solid #ccc;
+  /* border-top: 20px solid white;
+  border-bottom: 20px solid white; */
+  /* content: "\007C"; */
+}
+
+.navbar-nav > a:last-child {
+   border: none;
+}
+
+.image-container {
+  margin-right: 20px;
+  margin-top: 30px;
+}
+
+.news-feed-container {
+  height: 360px;
+  width: 100%;
+  background-color: #903330;
+  margin-top: 30px;
+  color: white;
+}
