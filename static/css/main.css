@@ -14,6 +14,7 @@ header {
 .main {
   background-color: white;
   padding: 40px;
+  padding-bottom: 20px;
 }
 
 .navbar.navbar-expand-lg.navbar-light {
@@ -24,9 +25,6 @@ header {
 
 .navbar-nav > a {
   border-right: 1px solid #ccc;
-  /* border-top: 20px solid white;
-  border-bottom: 20px solid white; */
-  /* content: "\007C"; */
 }
 
 .navbar-nav > a:last-child {
@@ -34,8 +32,13 @@ header {
 }
 
 .image-container {
-  margin-right: 20px;
+  margin-right: 15px;
   margin-top: 30px;
+}
+
+.image-container > img {
+  padding: 2px;
+  border-style: double;
 }
 
 .news-feed-container {
@@ -44,4 +47,78 @@ header {
   background-color: #903330;
   margin-top: 30px;
   color: white;
+  padding: 10px;
+}
+
+.news-feed-container > p {
+  padding-top: 10px;
+}
+
+.news-feed-container > p + hr {
+  background: white;
+}
+
+/* .vert .carousel-item-next, */
+.vert .active.carousel-item-right {
+    -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100% 0);
+}
+
+/* .vert .carousel-item-prev, */
+.vert .active.carousel-item-left {
+-webkit-transform: translate3d(0,-100%, 0);
+        transform: translate3d(0,-100%, 0);
+}
+
+.home-container {
+  margin-top: 30px;
+  margin-right: 15px;
+  padding-right: 10px;
+}
+
+.home-address-container {
+  margin-top: 20px;
+  padding-left: 10px;
+  line-height: 12px;
+}
+
+.home-address-container a:link {
+  text-decoration: underline;
+  color: #903330;
+}
+
+hr.footer-line {
+  margin-bottom: 5px;
+  background-color: black;
+}
+
+a.footer-link,
+a.footer-link:link,
+a.footer-link:visited {
+  font-size: 10px;
+  color: black;
+}
+
+a.footer-link:hover,
+div.footer-note > a:hover {
+  text-decoration: none;
+  color: #903330;
+}
+
+div.footer-note > a,
+div.footer-note > a:link,
+div.footer-note > a:visited {
+  font-size: 10px;
+}
+
+div.footer-note {
+  margin-top: 15px;
+}
+
+.grey-color {
+  color: #c0c0c0;
+}
+
+footer {
+  height: 40px;
 }
