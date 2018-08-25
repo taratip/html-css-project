@@ -41,8 +41,8 @@ header {
   border-style: double;
 }
 
-.news-feed-container {
-  height: 360px;
+.news-feed-container,
+.aside-container {
   width: 100%;
   background-color: #903330;
   margin-top: 30px;
@@ -50,21 +50,25 @@ header {
   padding: 10px;
 }
 
-.news-feed-container > p {
+.news-feed-container > p,
+.aside-container > p {
   padding-top: 10px;
+  margin-bottom: 8px;
 }
 
-.news-feed-container > p + hr {
+.news-feed-container > p + hr,
+.aside-container > p + hr {
+  margin-top: 5px;
   background: white;
 }
 
-/* .vert .carousel-item-next, */
+.vert .carousel-item-next,
 .vert .active.carousel-item-right {
     -webkit-transform: translate3d(0, 100%, 0);
             transform: translate3d(0, 100% 0);
 }
 
-/* .vert .carousel-item-prev, */
+.vert .carousel-item-prev,
 .vert .active.carousel-item-left {
 -webkit-transform: translate3d(0,-100%, 0);
         transform: translate3d(0,-100%, 0);
@@ -94,9 +98,11 @@ hr.footer-line {
 
 a.footer-link,
 a.footer-link:link,
-a.footer-link:visited {
+a.footer-link:visited,
+div.footer-note > a,
+div.footer-note > a:link,
+div.footer-note > a:visited {
   font-size: 10px;
-  color: black;
 }
 
 a.footer-link:hover,
@@ -105,20 +111,99 @@ div.footer-note > a:hover {
   color: #903330;
 }
 
-div.footer-note > a,
-div.footer-note > a:link,
-div.footer-note > a:visited {
-  font-size: 10px;
-}
-
 div.footer-note {
   margin-top: 15px;
+}
+
+.black-color {
+  color: black;
 }
 
 .grey-color {
   color: #c0c0c0;
 }
 
+.white-color {
+  color: white;
+}
+
 footer {
   height: 40px;
+}
+
+.aside-container a {
+  line-height: 25px;
+}
+
+.aside-container a:hover,
+a.sub-link:hover {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a.sub-link {
+  padding-left: 15px;
+  line-height: 12px;
+  font-size: 90%;
+}
+
+.aside-container img {
+  margin-top: 15px;
+  width: 100%;
+}
+
+figcaption {
+  line-height: 12px;
+}
+
+.article-container,
+.paragraph-title,
+.contact-container {
+  margin-top: 30px;
+}
+
+.article-container img {
+  width: 280px;
+  height: 115px;
+  object-fit: cover;
+}
+
+.small-img-container {
+  margin: 5px 5px 5px 0;
+  padding: 3px;
+  position: relative;
+  color: white;
+  font-size: 16px;
+  display: inline-block;
+  border-style: double;
+  border-color: black;
+}
+
+.small-img-caption {
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+}
+
+a.news-link,
+a.news-link:link,
+a.news-link:visited {
+  color: black;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+a.news-link:hover {
+  color: #903330;
+  font-weight: normal;
+}
+
+p.paragraph-title {
+  margin-bottom: 5px;
+}
+
+.article-container > p + p + hr {
+  margin-top: 5px;
+  background: black;
 }
